@@ -26,7 +26,7 @@ class BaseManager
      */
     public function __construct()
     {
-        $this->disk = Storage::disk(config('filesystems.default', 'public'));
+        $this->disk = Storage::disk(config('filesystems.default', 'upyun'));
     }
 
     /**
